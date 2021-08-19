@@ -1,0 +1,37 @@
+--All AutoFarm And Rebirths
+_G.LULU = true--change to true or false
+while _G.LULU do
+wait()--change time if you want
+local A_1 = "collectOrb"
+local A_2 = "Red Orb"
+local A_3 = "City"
+game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer(A_1, A_2, A_3)
+local A_1 = "collectOrb"
+local A_2 = "Yellow Orb"
+local A_3 = "City"
+game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer(A_1, A_2, A_3)
+local A_1 = "collectOrb"
+local A_2 = "Gem"
+local A_3 = "City"
+game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer(A_1, A_2, A_3)
+local A_1 = "collectOrb"
+local A_2 = "Orange Orb"
+local A_3 = "City"
+game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer(A_1, A_2, A_3)
+local A_1 = "collectOrb"
+local A_2 = "Blue Orb"
+local A_3 = "City"
+game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer(A_1, A_2, A_3)
+local A_1 = "rebirthRequest"
+game:GetService("ReplicatedStorage").rEvents.rebirthEvent:FireServer(A_1)
+end
+ 
+--AutoBuyCrystalEgg
+_G.LULU = true--change to true or false
+while _G.LULU do
+wait(1)--change time if you want
+local A_1 = "openCrystal"
+local A_2 = "Electro Legends Crystal"
+game:GetService("ReplicatedStorage").rEvents.openCrystalRemote:InvokeServer(A_1, A_2)
+end
+
